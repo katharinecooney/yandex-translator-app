@@ -1,27 +1,76 @@
+import React, { Component } from 'react';
 import axios from 'axios';
-
-import React, { Component } from 'react'
+import Form from './Form';
+import languages from './languages';
+import LanguageButton from './LanguageButton';
+import './Translator.css';
 
 const baseURL = 'https://translate.yandex.net/api/v1.5/tr.json/translate';
 const key = process.env.REACT_APP_YANDEX_KEY;
-const text = "Hello, my friend!";
-const lang = "es";
 
 
 class Translator extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      translatedMessage: '',
+      initialText: '',
+      language: ''
+    }
+    this.grabInitialText = this.grabInitialText.bind(this);
+    this.translateText = this.translateText.bind(this);
+    this.setLanguage = this.setLanguage.bind(this);
+  }
 
-  componentDidMount(){
+
+  // componentDidMount(){
+  //   const text = "I am hungry";
+  //   const lang = "es";
+  //   axios.get(`${baseURL}?key=${key}&lang=${lang}&text=${text}`)
+  //     .then(result => {
+  //       // text is an array
+  //       this.setState({
+  //         translatedMessage: result.data.text[0]
+  //       });
+  //       console.log(result.data.text[0])
+  //     })
+  // }
+
+  grabInitialText(userInput){
+    this.setState({
+      initialText: userInput
+    }, () => this.translateText())
+  }
+
+  translateText(){
+    const text = this.state.initialText;
+    const lang = this.state.language;
     axios.get(`${baseURL}?key=${key}&lang=${lang}&text=${text}`)
       .then(result => {
         // text is an array
+        this.setState({
+          translatedMessage: result.data.text[0]
+        });
         console.log(result.data.text[0])
       })
   }
 
+  setLanguage(lang){
+    this.setState({
+      language: lang,
+      translatedMessage: ''
+    })
+  }
+
   render() {
+    
     return (
-      <div>
-        <h1>hi</h1>
+      <div className="Translator">
+        <div className="Translator-languageOptions">
+          {languages.map(lang => <LanguageButton setLanguage={this.setLanguage} language={lang}/>)}
+        </div>
+        <Form grabInitialText={this.grabInitialText} />
+        <h1>{this.state.translatedMessage}</h1>
       </div>
     )
   }

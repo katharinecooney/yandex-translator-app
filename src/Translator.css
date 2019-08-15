@@ -1,0 +1,14 @@
+.Translator {
+  
+    text-align: center;
+    min-height: 100vh;
+    background-color: plum;
+  
+}
+
+.Translator-languageOptions {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
