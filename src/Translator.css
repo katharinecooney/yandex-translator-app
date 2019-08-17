@@ -1,14 +1,9 @@
-.Translator {
-  
-    text-align: center;
-    min-height: 100vh;
-    background-color: plum;
-  
+.Translator-languageSelector {
+  text-align: center;
+  background-color: purple;
+  padding: 10px 0 15px;
 }
 
-.Translator-languageOptions {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px 0;
+.Translator-languageSelector > h1 {
+  margin: 0;
 }
-

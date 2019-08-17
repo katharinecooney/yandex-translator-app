@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Form from './Form';
 import languages from './languages';
-import LanguageButton from './LanguageButton';
+import LanguageDropdown from './LanguageDropdown';
 import './Translator.css';
 
 const baseURL = 'https://translate.yandex.net/api/v1.5/tr.json/translate';
@@ -21,20 +21,6 @@ class Translator extends Component {
     this.translateText = this.translateText.bind(this);
     this.setLanguage = this.setLanguage.bind(this);
   }
-
-
-  // componentDidMount(){
-  //   const text = "I am hungry";
-  //   const lang = "es";
-  //   axios.get(`${baseURL}?key=${key}&lang=${lang}&text=${text}`)
-  //     .then(result => {
-  //       // text is an array
-  //       this.setState({
-  //         translatedMessage: result.data.text[0]
-  //       });
-  //       console.log(result.data.text[0])
-  //     })
-  // }
 
   grabInitialText(userInput){
     this.setState({
@@ -63,14 +49,25 @@ class Translator extends Component {
   }
 
   render() {
-    
     return (
       <div className="Translator">
-        <div className="Translator-languageOptions">
-          {languages.map(lang => <LanguageButton setLanguage={this.setLanguage} language={lang}/>)}
+
+        <div className="Translator-languageSelector">
+          <h1>I want to learn</h1>
+          <LanguageDropdown setLanguage={this.setLanguage} selectedLanguage={this.state.language} languages={languages} />
         </div>
-        <Form grabInitialText={this.grabInitialText} />
-        <h1>{this.state.translatedMessage}</h1>
+
+      
+        <div className="Translator-texts">
+          <div className="Translator-input">
+            <Form grabInitialText={this.grabInitialText} />
+          </div>
+
+          <div className="Translator-response">
+            <h1>{this.state.translatedMessage}</h1>
+          </div>
+        </div>
+        
       </div>
     )
   }

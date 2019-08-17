@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import './LanguageButton.css';
-import Italy from './italy.png'
 
 
 class LanguageButton extends Component {
@@ -17,8 +15,9 @@ class LanguageButton extends Component {
   }
 
   render() {
+    const active = this.props.selectedLanguage === this.props.language.code ? "LanguageButton active" : "LanguageButton";
     return (
-        <button className="LanguageButton" onClick={this.handleSetLanguage}>
+        <button className={active} onClick={this.handleSetLanguage}>
           <p>{this.props.language.name}</p>
           <img src={this.props.language.flag} alt=""/>
         </button>

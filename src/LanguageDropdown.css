@@ -1,0 +1,9 @@
+.ui.labeled.icon.button, 
+.ui.labeled.icon.buttons .button {
+  background-color: lavender;
+} 
+
+.LanguageDropdown-option {
+  display: flex;
+  padding: 0 0 10px 16px;
+}
