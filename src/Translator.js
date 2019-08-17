@@ -43,8 +43,7 @@ class Translator extends Component {
 
   setLanguage(lang){
     this.setState({
-      language: lang,
-      translatedMessage: ''
+      language: lang
     })
   }
 

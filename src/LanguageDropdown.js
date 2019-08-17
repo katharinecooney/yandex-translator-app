@@ -1,58 +1,42 @@
 import React, { Component } from 'react';
 import {Dropdown, Flag} from 'semantic-ui-react';
+import LanguageOption from './LanguageOption';
 import './LanguageDropdown.css';
-
-
-const friendOptions = [
-  {
-    key: 'Jenny Hess',
-    text: 'Jenny Hess',
-    value: 'Jenny Hess',
-    
-  },
-  {
-    key: 'Elliot Fu',
-    text: 'Elliot Fu',
-    value: 'Elliot Fu',
-    
-  },
-  {
-    key: 'Stevie Feliciano',
-    text: 'Stevie Feliciano',
-    value: 'Stevie Feliciano',
-    
-  },
-]
 
 class LanguageDropdown extends Component {
   constructor(props){
     super(props);
     this.state = {
-      language: ''
+      dropdownMessage: 'Choose Language'
     }
-    this.handleSetLanguage = this.handleSetLanguage.bind(this);
+    this.updateDropdownMessage = this.updateDropdownMessage.bind(this)
   }
 
-  handleSetLanguage(){
-    this.props.setLanguage(this.props.languages.code)
+  updateDropdownMessage(choosenLanguage){
+    this.setState({
+      dropdownMessage: choosenLanguage
+    })
   }
+  
+
   render(){
     return(
-<Dropdown
-    text='Choose Language'
-    floating
-    labeled
-    button
-    className='Dropdown icon'
-    
-  >
+    <Dropdown
+      text={this.state.dropdownMessage}
+      floating
+      labeled
+      button
+      className='Dropdown icon'
+    >
     <Dropdown.Menu>
-      <Dropdown.Header content='Choose Language' />
-      {this.props.languages.map(option => ( <span onClick={() => this.props.setLanguage(option.code)} className="LanguageDropdown-option">
-        <Flag name={option.code} />
-        <Dropdown.Item key={option.value} {...option} />
-      </span>
-        
+      <Dropdown.Header />
+      {this.props.languages.map(language => (
+        <LanguageOption 
+          language={language} 
+          setLanguage={this.props.setLanguage} 
+          updateDropdownMessage={this.updateDropdownMessage}
+          selectedLanguage={this.props.selectedLanguage} 
+        />
       ))}
     </Dropdown.Menu>
   </Dropdown>
