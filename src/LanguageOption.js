@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Flag} from 'semantic-ui-react';
+import './LanguageOption.css';
 
 class LanguageOption extends Component {
   constructor(props){
@@ -11,13 +12,13 @@ class LanguageOption extends Component {
     this.props.setLanguage(this.props.language.code);
     this.props.updateDropdownMessage(
     <div>
-    <Flag name={this.props.language.code} /><span>{this.props.language.value}</span>
+    <Flag className="LanguageOption-flag" name={this.props.language.code} /><span>{this.props.language.value}</span>
     </div>)
   }
 
   render() {
     return (
-      <div onClick={this.handleSetLanguage}>
+      <div className="LanguageOption" onClick={this.handleSetLanguage}>
         <Flag name={this.props.language.code} />
         <span>{this.props.language.value}</span>
       </div>

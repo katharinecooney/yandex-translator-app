@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid } from 'semantic-ui-react';
 import axios from 'axios';
 import Form from './Form';
 import languages from './languages';
@@ -55,17 +56,18 @@ class Translator extends Component {
           <h1>I want to learn</h1>
           <LanguageDropdown setLanguage={this.setLanguage} selectedLanguage={this.state.language} languages={languages} />
         </div>
-
-      
-        <div className="Translator-texts">
-          <div className="Translator-input">
+        
+        <Grid className="Translator-texts" columns='two' stackable divided>
+          <Grid.Column className="Translator-input">
             <Form grabInitialText={this.grabInitialText} />
-          </div>
-
-          <div className="Translator-response">
+            hi
+          </Grid.Column>
+          
+          <Grid.Column className="Translator-response">
             <h1>{this.state.translatedMessage}</h1>
-          </div>
-        </div>
+            bye
+          </Grid.Column>
+        </Grid>
         
       </div>
     )
