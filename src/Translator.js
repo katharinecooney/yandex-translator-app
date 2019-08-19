@@ -5,6 +5,7 @@ import Form from './Form';
 import languages from './languages';
 import LanguageDropdown from './LanguageDropdown';
 import './Translator.css';
+import girl from './girl.jpg';
 
 const baseURL = 'https://translate.yandex.net/api/v1.5/tr.json/translate';
 const key = process.env.REACT_APP_YANDEX_KEY;
@@ -58,17 +59,23 @@ class Translator extends Component {
         </div>
         
         <Grid className="Translator-texts" columns='two' stackable divided>
-          <Grid.Column className="Translator-input">
-            <Form grabInitialText={this.grabInitialText} />
-            hi
+          <Grid.Column className="Translator-column">
+            <div className="Translator-column-inner">
+              <img className="Translator-avatar" src={girl} alt=""/>
+              <Form grabInitialText={this.grabInitialText} />
+            </div>
+              
           </Grid.Column>
           
-          <Grid.Column className="Translator-response">
-            <h1>{this.state.translatedMessage}</h1>
-            bye
+          <Grid.Column className="Translator-column">
+            <div className="Translator-column-inner">
+              <div className="Translator-speechBlurb">
+                <p>{this.state.translatedMessage}</p>
+              </div>
+              <img className="Translator-avatar" src={girl} alt=""/> 
+            </div>  
           </Grid.Column>
         </Grid>
-        
       </div>
     )
   }

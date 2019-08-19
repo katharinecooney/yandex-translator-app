@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Form.css';
 
 class Form extends Component {
   constructor(props){
@@ -29,7 +30,7 @@ class Form extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form className="Form" onSubmit={this.handleSubmit}>
         <input 
           type="text" 
           value={this.state.initialText}

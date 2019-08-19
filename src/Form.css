@@ -1,0 +1,18 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.Form input {
+  height: 150px;
+  width: 100%;
+  background-color: yellow;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
+  border: none;
+}

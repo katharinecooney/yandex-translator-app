@@ -1,9 +1,77 @@
-.Translator-languageSelector {
-  text-align: center;
-  background-color: purple;
-  padding: 10px 0 15px;
+.Translator {
+  display: flex;
+  flex-flow: column;
+  height: 98vh;
 }
 
-.Translator-languageSelector > h1 {
-  margin: 0;
+/*============================================================*/
+/******************** HEADER AND DROPDOWN *********************/
+/*============================================================*/
+
+.Translator-languageSelector {
+  margin-bottom: 15px;
+  padding-top: 15px; 
+  text-align: center; 
+}
+
+/*============================================================*/
+/********************* TRANSLATION TEXTS **********************/
+/*============================================================*/
+
+.ui.grid {
+  margin-top: auto;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.Translator-texts{
+  background-color: #DDDDDD;
+  flex-grow : 1;
+}
+
+/*============================================================*/
+/************************** COLUMNS ***************************/
+/*============================================================*/
+
+.Translator-column {
+  background-color: rgb(121, 7, 167);
+  
+}
+
+/* this styles the .Translator-column; 
+need to include this selector to override specificity 
+of the semantic-ui package */
+.ui.stackable.divided:not(.vertically).grid>.column:not(.row), .ui.stackable.divided:not(.vertically).grid>.row>.column {
+  display: flex;
+  justify-content: center;
+}
+
+.Translator-column-inner {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lavender;
+}
+
+/*============================================================*/
+/************************ AVATAR IMAGE *************************/
+/*============================================================*/
+
+.Translator-avatar {
+  width: 30%;
+  height: auto;
+  align-self: center;
+}
+
+.Translator-speechBlurb {
+  width: 50%;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 15px;
+  font-size: 1rem;
+  padding: 10px;
+  overflow: auto;
+  text-align: center;
 }

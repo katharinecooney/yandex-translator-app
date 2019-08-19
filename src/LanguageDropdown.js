@@ -26,7 +26,7 @@ class LanguageDropdown extends Component {
       floating
       labeled
       button
-      className='Dropdown icon'
+      className='LanguageDropdown icon'
     >
     <Dropdown.Menu>
       <Dropdown.Header />
