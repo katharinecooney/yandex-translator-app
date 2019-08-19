@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Dropdown, Flag} from 'semantic-ui-react';
+import {Dropdown} from 'semantic-ui-react';
 import LanguageOption from './LanguageOption';
 import './LanguageDropdown.css';
 

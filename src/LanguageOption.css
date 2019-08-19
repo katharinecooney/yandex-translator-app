@@ -1,6 +1,9 @@
 .LanguageOption {
   display: flex;
   align-items: center;
+}
+
+.LanguageOption-dropdownOption {
   padding: 0 0 8px 15px;
 }
 

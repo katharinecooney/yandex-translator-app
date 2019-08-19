@@ -9,9 +9,11 @@
 /*============================================================*/
 
 .Translator-languageSelector {
-  margin-bottom: 15px;
   padding-top: 15px; 
+  padding-bottom: 15px;
   text-align: center; 
+  background-color: rgb(56, 3, 56);
+  color: white;
 }
 
 /*============================================================*/
@@ -19,7 +21,7 @@
 /*============================================================*/
 
 .ui.grid {
-  margin-top: auto;
+  margin-top: 0;
   margin-bottom: -1rem;
   margin-left: -1rem;
   margin-right: -1rem;
