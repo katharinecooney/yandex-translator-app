@@ -53,6 +53,8 @@ of the semantic-ui package */
   justify-content: space-between;
   align-items: center;
   background-color: lavender;
+  border-radius: 15px;
+  box-shadow: 2px 2px 12px rgb(236, 241, 236);
 }
 
 /*============================================================*/
@@ -65,7 +67,8 @@ of the semantic-ui package */
   align-self: center;
 }
 
-.Translator-speechBlurb {
+.Translator-speechBlurb,
+.Translator-speechBlurb-initial {
   width: 50%;
   height: 150px;
   background-color: yellow;
@@ -75,3 +78,4 @@ of the semantic-ui package */
   overflow: auto;
   text-align: center;
 }
+

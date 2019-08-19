@@ -1,0 +1,10 @@
+.LanguageOption {
+  display: flex;
+  align-items: center;
+  padding: 0 0 8px 15px;
+}
+
+.LanguageOption-flag {
+  width: 30px;
+  padding-right: 10px;
+}

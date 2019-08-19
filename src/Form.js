@@ -30,17 +30,21 @@ class Form extends Component {
 
   render() {
     return (
-      <form className="Form" onSubmit={this.handleSubmit}>
-        <input 
-          type="text" 
-          value={this.state.initialText}
-          // needs to 
-          name="initialText"
-          onChange={this.handleChange}
-          id="initialText"
-        />
-        <button type="submit">Submit</button>
-      </form>
+      
+        <form className="Form" onSubmit={this.handleSubmit}>
+          
+          <textarea
+            
+            value={this.state.initialText}
+            name="initialText"
+            onChange={this.handleChange}
+            id="initialText"
+          />
+          
+          <button type="submit">Submit</button>
+        </form>
+      
+      
     )
   }
 }

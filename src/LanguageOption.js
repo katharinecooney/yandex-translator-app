@@ -12,14 +12,15 @@ class LanguageOption extends Component {
     this.props.setLanguage(this.props.language.code);
     this.props.updateDropdownMessage(
     <div>
-    <Flag className="LanguageOption-flag" name={this.props.language.code} /><span>{this.props.language.value}</span>
+      <img className="LanguageOption-flag" src={this.props.language.code} />
+      <span>{this.props.language.value}</span>
     </div>)
   }
 
   render() {
     return (
       <div className="LanguageOption" onClick={this.handleSetLanguage}>
-        <Flag name={this.props.language.code} />
+        <img className="LanguageOption-flag" src={this.props.language.flag} />
         <span>{this.props.language.value}</span>
       </div>
     )
