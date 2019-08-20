@@ -30,8 +30,8 @@ class Form extends Component {
 
   render() {
     return (
-      
-        <form className="Form" onSubmit={this.handleSubmit}>
+      <div className="Form">
+      <form  onSubmit={this.handleSubmit}>
           
           <textarea
             
@@ -43,6 +43,8 @@ class Form extends Component {
           
           <button type="submit">Submit</button>
         </form>
+      </div>
+        
       
       
     )
