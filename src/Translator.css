@@ -35,7 +35,7 @@
 .Translator-texts{
   background-color: #DDDDDD;
   flex-grow : 1;
-  background-image: url('./background4.png');
+  /* background-image: url('./background4.png'); */
   background-size: cover;
   border: 3px solid orange;
   width: 100%;
@@ -84,7 +84,7 @@ of the semantic-ui package */
   
   position: relative;
   padding: 15px;
-  margin: 1em 0 3em;
+  /* margin: 1em 0 3em; */
   color: #000;
   background: #f3961c;
   border-radius: 10px;
