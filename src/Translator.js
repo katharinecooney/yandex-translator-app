@@ -60,7 +60,7 @@ class Translator extends Component {
         <Grid className="Translator-texts" columns='two' stackable divided>
           <Grid.Column className="Translator-column">
             <div className="Translator-column-inner">
-              <img className="Translator-avatar" src={Girl1} alt=""/>
+              <img className="Translator-avatar Translator-avatar-input" src={Girl1} alt=""/> 
               <Form grabInitialText={this.grabInitialText} />
             </div>
               
@@ -71,7 +71,7 @@ class Translator extends Component {
               <div className="Translator-speechBlurb">
                 <p>{this.state.translatedMessage}</p>
               </div>
-              <img className="Translator-avatar" src={Girl1} alt=""/> 
+              <img className="Translator-avatar Translator-avatar-response" src={Girl1} alt=""/> 
             </div>  
           </Grid.Column>
         </Grid>

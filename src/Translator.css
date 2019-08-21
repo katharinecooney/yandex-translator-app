@@ -79,8 +79,7 @@ of the semantic-ui package */
 /*********************** SPEECH BUBBLE ************************/
 /*============================================================*/
 
-.Translator-speechBlurb,
-.Translator-speechBlurb-initial {
+.Translator-speechBlurb {
   
   position: relative;
   padding: 15px;
@@ -90,7 +89,7 @@ of the semantic-ui package */
   border-radius: 10px;
   background: white;
   width: 50%;
-  height: 150px;
+  height: 70%;
   z-index: 1;
 }
 
@@ -112,4 +111,40 @@ of the semantic-ui package */
   border-style: solid;
   border-color: #ffffff transparent;
   z-index: -1;
+}
+
+
+
+@media (min-width: 768px) {
+  .Translator-column-inner {
+    flex-direction: column;
+   border: 1px solid red; 
+   justify-content: center;
+   padding: 25px 15px;
+  }
+
+  .Translator-speechBlurb {
+    width: 95%;
+    height: 250px;
+  }
+
+  .Translator-avatar {
+    width: 50%;
+  }
+  
+  .Translator-avatar-input {
+    align-self: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .Translator-avatar-response {
+    align-self: flex-end;
+    margin-top: 30px;
+  }
+
+  .Translator-speechBlurb:after {
+    top: 100%; 
+    left: 15%; 
+    border-width: 35px 25px 0; 
+  }
 }
