@@ -39,6 +39,7 @@ class Form extends Component {
             name="initialText"
             onChange={this.handleChange}
             id="initialText"
+            placeholder="How do I say...?"
           />
           
           <button type="submit">Submit</button>

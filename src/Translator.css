@@ -75,26 +75,30 @@ of the semantic-ui package */
   align-self: center;
 }
 
+/*============================================================*/
+/*********************** SPEECH BUBBLE ************************/
+/*============================================================*/
+
 .Translator-speechBlurb,
 .Translator-speechBlurb-initial {
-  /* width: 50%;
-  height: 150px;
-  background-color: yellow;
-  border-radius: 15px;
-  font-size: 1rem;
-  padding: 10px;
-  overflow: auto;
-  text-align: center;
-  position: relative; */
+  
   position: relative;
   padding: 15px;
   margin: 1em 0 3em;
   color: #000;
   background: #f3961c;
   border-radius: 10px;
-  background: linear-gradient(top, #f9d835, #f3961c);
-  width: 40%;
+  background: white;
+  width: 50%;
   height: 150px;
+  z-index: 1;
+}
+
+/* set the z-index to 2 so that text doesn't hide behind the speech bubble's triangle */
+.Translator-speechBlurb > p {
+  z-index: 2;
+  position: relative;
+  text-align: center;
 }
 
 .Translator-speechBlurb:after {
@@ -106,5 +110,6 @@ of the semantic-ui package */
   width: 0;
   border-width:  35px 35px 0;
   border-style: solid;
-  border-color: #00c291 transparent;
+  border-color: #ffffff transparent;
+  z-index: -1;
 }
