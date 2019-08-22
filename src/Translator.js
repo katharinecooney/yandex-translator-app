@@ -32,7 +32,12 @@ class Translator extends Component {
   translateText(){
     const text = this.state.initialText;
     const lang = this.state.language;
-    axios.get(`${baseURL}?key=${key}&lang=${lang}&text=${text}`)
+
+  lang === '' 
+  ? this.setState({
+    translatedMessage: <span>PLEASE SELECT LANAGUAGE</span>
+  }) 
+  : axios.get(`${baseURL}?key=${key}&lang=${lang}&text=${text}`)
       .then(result => {
         // text is an array
         this.setState({

@@ -7,7 +7,7 @@
   padding: 15px;
   color: #000;
   background: #f3961c;
-  border-radius: 10px;
+  border-radius: 30px;
   background: white;
   width: 50%;
   height: 70%;
@@ -25,7 +25,7 @@ form {
   text-align: center;
   height: 85%;
   z-index: 1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .Form:after {
@@ -47,12 +47,17 @@ form {
   .Form {
     width: 95%;
     height: 250px;
+    border-radius: 70px;
+  }
+
+  .Form textarea {
+    border-radius: 70px;
   }
 
 
   .Form:after {
     top: -35px;
-    left: 70%; 
+    left: 60%; 
     border-width:  0 25px 35px ; 
   }
 

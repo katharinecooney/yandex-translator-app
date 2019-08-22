@@ -3,7 +3,7 @@
   flex-flow: column;
   height: 100vh;
   max-width: 100vw;
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   font-family: 'Livvic', sans-serif;
 }
 
@@ -15,9 +15,8 @@
   padding-top: 15px; 
   padding-bottom: 15px;
   text-align: center; 
-  background-color: rgb(117, 2, 117);
+  background-color: rgba(190, 32, 138, 0.89);
   color: white;
-  /* max-width: 100vw; */
 }
 
 /*============================================================*/
@@ -33,11 +32,10 @@
 }
 
 .Translator-texts{
-  background-color: #DDDDDD;
+  background-color: rgb(31, 30, 30);
   flex-grow : 1;
-  /* background-image: url('./background4.png'); */
   background-size: cover;
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   width: 100%;
 }
 
@@ -57,11 +55,14 @@ of the semantic-ui package */
 .Translator-column-inner {
   width: 90%;
   display: flex;
-  padding: 0 15px;
+  padding: 0 25px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(12, 170, 190);
-  border-radius: 15px;
+  /* background-color: rgba(193, 238, 241, 0.95); */
+  background-image: url("./background6.png");
+  background-size: cover;
+/* box-shadow: 4px 4px 10px rgb(230, 208, 224); */
+  border-radius: 75px;
   /* box-shadow: 2px 2px 12px rgb(236, 241, 236); */
 }
 
@@ -86,7 +87,7 @@ of the semantic-ui package */
   /* margin: 1em 0 3em; */
   color: #000;
   background: #f3961c;
-  border-radius: 10px;
+  border-radius: 30px;
   background: white;
   width: 50%;
   height: 70%;
@@ -118,7 +119,7 @@ of the semantic-ui package */
 @media (min-width: 768px) {
   .Translator-column-inner {
     flex-direction: column;
-   border: 1px solid red; 
+   /* border: 1px solid red;  */
    justify-content: center;
    padding: 25px 15px;
   }
@@ -126,6 +127,7 @@ of the semantic-ui package */
   .Translator-speechBlurb {
     width: 95%;
     height: 250px;
+    border-radius: 70px;
   }
 
   .Translator-avatar {

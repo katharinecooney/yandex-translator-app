@@ -22,9 +22,7 @@ class Form extends Component {
     console.log('submitted');
     // call a method from the parent
     this.props.grabInitialText(this.state.initialText)
-    this.setState({
-      initialText: ''
-    })
+    
   }
 
 
