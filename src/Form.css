@@ -23,6 +23,8 @@ form {
 .Form textarea {
   width: 100%;
   text-align: center;
+  display: flex;
+  align-items: center;
   height: 85%;
   z-index: 1;
   /* border: 1px solid red; */
