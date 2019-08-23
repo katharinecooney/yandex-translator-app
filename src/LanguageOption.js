@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Flag} from 'semantic-ui-react';
 import './LanguageOption.css';
 
 class LanguageOption extends Component {

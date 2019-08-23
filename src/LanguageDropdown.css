@@ -1,0 +1,8 @@
+/* this styles the .LanguageDropdown; 
+need to include this selector to override specificity 
+of the semantic-ui package */
+
+.ui.labeled.icon.button {
+  background-color: white;
+  border-radius: 15px;
+}
