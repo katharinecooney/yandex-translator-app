@@ -36,7 +36,7 @@ class Translator extends Component {
 
   lang === '' 
   ? this.setState({
-    translatedMessage: <span>PLEASE SELECT LANAGUAGE</span>
+    translatedMessage: '**PLEASE SELECT LANAGUAGE**'
   }) 
   : axios.get(`${baseURL}?key=${key}&lang=${lang}&text=${text}`)
       .then(result => {
@@ -65,6 +65,7 @@ class Translator extends Component {
         <Grid className="Translator-texts" columns='two' stackable divided>
           <Grid.Column className="Translator-column">
             <div className="Translator-column-inner">
+              
               <img className="Translator-avatar Translator-avatar-input" src={avatar1} alt=""/> 
               <Form grabInitialText={this.grabInitialText} />
             </div>

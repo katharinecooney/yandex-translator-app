@@ -8,12 +8,11 @@
 }
 
 .LanguageOption-dropdownOption {
-  padding: 0 0 8px 15px;
+  padding: 0 0 10px 15px;
   display: flex;
   align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
-
-
 
 .LanguageOption-flag {
   width: 30px;

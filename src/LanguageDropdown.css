@@ -5,4 +5,5 @@ of the semantic-ui package */
 .ui.labeled.icon.button {
   background-color: white;
   border-radius: 15px;
+  font-family: 'Raleway', sans-serif;
 }

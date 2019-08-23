@@ -12,13 +12,13 @@
 .Translator-languageSelector {
   padding: 15px 0; 
   text-align: center; 
-  background-color: rgba(190, 32, 138, 0.89);
+  background-color: #00c9ff;
   color: white;
 }
 
 .Translator-languageSelector h1 {
   font-family: 'Livvic';
-  font-size: 2.5rem;
+  
 }
 
 /*====================================*/
@@ -34,9 +34,52 @@
 }
 
 .Translator-texts {
-  background-color: rgb(31, 30, 30);
   flex-grow : 1;
+
+  background-image: linear-gradient( #92fe9daf 0%, #00c8ffc4 100%);
 }
+
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0 50%
+	}
+}
+
+
+
+
 
 /*====================================*/
 /************** COLUMNS ***************/
@@ -57,7 +100,7 @@ of the semantic-ui package */
   padding: 0 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(193, 238, 241, 0.95);
+  /* background-color: rgba(6, 27, 29, 0.95); */
   background-size: cover;
   min-height: 150px;
 
@@ -69,6 +112,7 @@ of the semantic-ui package */
 
 .Translator-avatar {
   width: 30%;
+  max-width: 250px;
   height: auto;
   align-self: center;
 }
@@ -100,7 +144,7 @@ the speech bubble's triangle */
   text-align: center;
   height: 80%;
   overflow: auto;
- 
+  font-family: 'Raleway', sans-serif;
 }
 
 .Translator-speechBlurb:after {
@@ -129,6 +173,15 @@ the speech bubble's triangle */
   }
 }
 
+@media (min-width: 600px) {
+  .Translator-speechBlurb > p {
+    font-size: 1.25rem;
+  }
+  .Translator-languageSelector h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .Translator-languageSelector {
     padding: 25px 0;   
@@ -143,11 +196,10 @@ the speech bubble's triangle */
     flex-direction: column;
     justify-content: center;
     padding: 25px 15px;
-
   }
   .Translator-speechBlurb {
     width: 95%;
-    height: 250px;
+    height: 220px;
     border-radius: 70px;
   }
   .Translator-avatar {
