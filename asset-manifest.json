@@ -1,15 +1,27 @@
 {
   "files": {
-    "main.css": "/yandex-translator-app/static/css/main.2cce8147.chunk.css",
-    "main.js": "/yandex-translator-app/static/js/main.da786e5e.chunk.js",
-    "main.js.map": "/yandex-translator-app/static/js/main.da786e5e.chunk.js.map",
+    "main.css": "/yandex-translator-app/static/css/main.a1b7912c.chunk.css",
+    "main.js": "/yandex-translator-app/static/js/main.065ca96e.chunk.js",
+    "main.js.map": "/yandex-translator-app/static/js/main.065ca96e.chunk.js.map",
     "runtime~main.js": "/yandex-translator-app/static/js/runtime~main.9c8c1b51.js",
     "runtime~main.js.map": "/yandex-translator-app/static/js/runtime~main.9c8c1b51.js.map",
-    "static/js/2.568fa783.chunk.js": "/yandex-translator-app/static/js/2.568fa783.chunk.js",
-    "static/js/2.568fa783.chunk.js.map": "/yandex-translator-app/static/js/2.568fa783.chunk.js.map",
+    "static/js/2.5b5ac55c.chunk.js": "/yandex-translator-app/static/js/2.5b5ac55c.chunk.js",
+    "static/js/2.5b5ac55c.chunk.js.map": "/yandex-translator-app/static/js/2.5b5ac55c.chunk.js.map",
     "index.html": "/yandex-translator-app/index.html",
-    "precache-manifest.07e0da344161dc9bad173c450c15aeb6.js": "/yandex-translator-app/precache-manifest.07e0da344161dc9bad173c450c15aeb6.js",
+    "precache-manifest.e411b13cd79088ea40935d1877e46389.js": "/yandex-translator-app/precache-manifest.e411b13cd79088ea40935d1877e46389.js",
     "service-worker.js": "/yandex-translator-app/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/yandex-translator-app/static/css/main.2cce8147.chunk.css.map"
+    "static/css/main.a1b7912c.chunk.css.map": "/yandex-translator-app/static/css/main.a1b7912c.chunk.css.map",
+    "static/media/Boy1.png": "/yandex-translator-app/static/media/Boy1.7dafc2b3.png",
+    "static/media/Boy2.png": "/yandex-translator-app/static/media/Boy2.c0d604a4.png",
+    "static/media/Boy3.png": "/yandex-translator-app/static/media/Boy3.dd554374.png",
+    "static/media/Boy4.png": "/yandex-translator-app/static/media/Boy4.de0ea62a.png",
+    "static/media/Boy5.png": "/yandex-translator-app/static/media/Boy5.64a05787.png",
+    "static/media/Girl1.png": "/yandex-translator-app/static/media/Girl1.22fcb6f0.png",
+    "static/media/Girl2.png": "/yandex-translator-app/static/media/Girl2.411630cc.png",
+    "static/media/Girl3.png": "/yandex-translator-app/static/media/Girl3.fa4a8d17.png",
+    "static/media/Girl4.png": "/yandex-translator-app/static/media/Girl4.5676e7ca.png",
+    "static/media/Girl5.png": "/yandex-translator-app/static/media/Girl5.e0cd25a9.png",
+    "static/media/Girl6.png": "/yandex-translator-app/static/media/Girl6.2ba61679.png",
+    "static/media/Girl7.png": "/yandex-translator-app/static/media/Girl7.eefa9d1d.png"
   }
 }
