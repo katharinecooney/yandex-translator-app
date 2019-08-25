@@ -55,8 +55,12 @@ class Translator extends Component {
           translatedMessage: result.data.text[0],
           isLoading: false
         });
-        console.log(result.data.text[0])
       })
+      .catch (error => 
+        this.setState({
+          translatedMessage: 'TRY AGAIN',
+          isLoading: false
+        }))
     }
 
 
