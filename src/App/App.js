@@ -1,6 +1,5 @@
 import React from 'react';
-import Translator from './Translator';
-import './App.css';
+import Translator from '../Translator/Translator';
 
 function App() {
   return (

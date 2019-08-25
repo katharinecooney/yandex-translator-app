@@ -1,0 +1,26 @@
+/* this styles the .LanguageDropdown; 
+need to include this selector to override specificity 
+of the semantic-ui package */
+
+.ui.labeled.icon.button {
+  background-color: white;
+  border-radius: 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.ui.labeled.icon.button.languagePrompt {
+  /* border: 3px solid red; */
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+	0%,100% {
+    box-shadow: 
+      none;
+	}
+	50% {
+    box-shadow: 
+    1px 1px rgb(255, 255, 255), 
+    0 0 5px 3px rgb(255, 255, 255);
+	}
+}

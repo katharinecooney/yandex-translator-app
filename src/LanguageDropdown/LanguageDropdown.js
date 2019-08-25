@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Dropdown} from 'semantic-ui-react';
-import LanguageOption from './LanguageOption';
+import LanguageOption from '../LanguageOption/LanguageOption';
 import './LanguageDropdown.css';
 
 class LanguageDropdown extends Component {
@@ -20,13 +20,14 @@ class LanguageDropdown extends Component {
   
 
   render(){
+    
     return(
     <Dropdown
       text={this.state.dropdownMessage}
       floating
       labeled
       button
-      className='LanguageDropdown icon'
+      className= {!this.props.isLanguageSelected  ? 'LanguageDropdown icon languagePrompt' : 'LanguageDropdown icon' }
     >
     <Dropdown.Menu>
       <Dropdown.Header />
