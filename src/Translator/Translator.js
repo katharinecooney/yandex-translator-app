@@ -44,11 +44,7 @@ class Translator extends Component {
     const text = this.state.initialText;
     const lang = this.state.language;
 
-  // lang === '' 
-  // ? this.setState({
-  //   translatedMessage: '**PLEASE SELECT LANGUAGE**'
-  // }) 
-  axios.get(`${baseURL}?key=${key}&lang=${lang}&text=${text}`)
+    axios.get(`${baseURL}?key=${key}&lang=${lang}&text=${text}`)
       .then(result => {
         // text is an array
         this.setState({
@@ -58,12 +54,10 @@ class Translator extends Component {
       })
       .catch (error => 
         this.setState({
-          translatedMessage: 'TRY AGAIN',
+          translatedMessage: '**SELECT A LANGUAGE AND ENTER YOUR TEXT**',
           isLoading: false
         }))
-    }
-
-
+    } 
 
   render() {
     return (
@@ -77,7 +71,7 @@ class Translator extends Component {
           <Grid.Column className="Translator-column">
             <div className="Translator-column-inner">
               
-              <img className="Translator-avatar Translator-avatar-input" src={avatar1} alt=""/> 
+              <img className="Translator-avatar Translator-avatar-input" src={avatar1} alt="randomly selected avatar"/> 
               <Form grabInitialText={this.grabInitialText} />
             </div>
           </Grid.Column>
@@ -88,12 +82,12 @@ class Translator extends Component {
                 
                 {
                   this.state.isLoading 
-                  ? <div class="loader more"></div>
+                  ? <div className="loader more"></div>
                   : <p>{this.state.translatedMessage}</p> 
                 }
                 
               </div>
-              <img className="Translator-avatar Translator-avatar-response" src={avatar2} alt=""/> 
+              <img className="Translator-avatar Translator-avatar-response" src={avatar2} alt="randomly selected avatar"/> 
             </div>  
           </Grid.Column>
 

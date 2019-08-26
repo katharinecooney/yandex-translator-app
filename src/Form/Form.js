@@ -19,12 +19,9 @@ class Form extends Component {
 
   handleSubmit(event){
     event.preventDefault();
-    console.log('submitted');
     // call a method from the parent
     this.props.grabInitialText(this.state.initialText)
-    
   }
-
 
   render() {
     return (

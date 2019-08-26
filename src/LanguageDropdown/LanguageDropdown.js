@@ -18,10 +18,8 @@ class LanguageDropdown extends Component {
     })
   }
   
-
   render(){
-    
-    return(
+    return (
     <Dropdown
       text={this.state.dropdownMessage}
       floating
@@ -33,6 +31,7 @@ class LanguageDropdown extends Component {
       <Dropdown.Header />
       {this.props.languages.map(language => (
         <LanguageOption 
+          key={language.key}
           language={language} 
           setLanguage={this.props.setLanguage} 
           updateDropdownMessage={this.updateDropdownMessage}
