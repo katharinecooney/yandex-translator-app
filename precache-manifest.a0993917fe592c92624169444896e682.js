@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3d239bcc134055bbf9a794df92ba4a0d",
+    "revision": "9d3b6cae04bd0354943e9a1b9911ec04",
     "url": "/yandex-translator-app/index.html"
   },
   {
-    "revision": "1b1128718cd654bd2463",
+    "revision": "b2a1517790cbd19dc35d",
     "url": "/yandex-translator-app/static/css/main.274a46a5.chunk.css"
   },
   {
-    "revision": "b8d1d96cd69e9c17dc01",
-    "url": "/yandex-translator-app/static/js/2.5b5ac55c.chunk.js"
+    "revision": "5ecbc206683e780707fc",
+    "url": "/yandex-translator-app/static/js/2.eaf34b3b.chunk.js"
   },
   {
-    "revision": "1b1128718cd654bd2463",
-    "url": "/yandex-translator-app/static/js/main.ebf4a257.chunk.js"
+    "revision": "b2a1517790cbd19dc35d",
+    "url": "/yandex-translator-app/static/js/main.aa0c6f86.chunk.js"
   },
   {
     "revision": "1dcc77f879bb984325bb",
@@ -60,11 +60,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/yandex-translator-app/static/media/Girl5.e0cd25a9.png"
   },
   {
-    "revision": "2ba616797c9c54fbafd6b5eec05d203c",
-    "url": "/yandex-translator-app/static/media/Girl6.2ba61679.png"
-  },
-  {
     "revision": "eefa9d1dc0a8bc7e0e8bcd2bafe86ba6",
-    "url": "/yandex-translator-app/static/media/Girl7.eefa9d1d.png"
+    "url": "/yandex-translator-app/static/media/Girl6.eefa9d1d.png"
   }
 ]);

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/yandex-translator-app/precache-manifest.0eceb4df4c3f23dde584592a05eaec3e.js"
+  "/yandex-translator-app/precache-manifest.a0993917fe592c92624169444896e682.js"
 );
 
 self.addEventListener('message', (event) => {

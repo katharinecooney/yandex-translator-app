@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yandex-translator-app/static/css/main.274a46a5.chunk.css",
-    "main.js": "/yandex-translator-app/static/js/main.ebf4a257.chunk.js",
-    "main.js.map": "/yandex-translator-app/static/js/main.ebf4a257.chunk.js.map",
+    "main.js": "/yandex-translator-app/static/js/main.aa0c6f86.chunk.js",
+    "main.js.map": "/yandex-translator-app/static/js/main.aa0c6f86.chunk.js.map",
     "runtime~main.js": "/yandex-translator-app/static/js/runtime~main.9c8c1b51.js",
     "runtime~main.js.map": "/yandex-translator-app/static/js/runtime~main.9c8c1b51.js.map",
-    "static/js/2.5b5ac55c.chunk.js": "/yandex-translator-app/static/js/2.5b5ac55c.chunk.js",
-    "static/js/2.5b5ac55c.chunk.js.map": "/yandex-translator-app/static/js/2.5b5ac55c.chunk.js.map",
+    "static/js/2.eaf34b3b.chunk.js": "/yandex-translator-app/static/js/2.eaf34b3b.chunk.js",
+    "static/js/2.eaf34b3b.chunk.js.map": "/yandex-translator-app/static/js/2.eaf34b3b.chunk.js.map",
     "index.html": "/yandex-translator-app/index.html",
-    "precache-manifest.0eceb4df4c3f23dde584592a05eaec3e.js": "/yandex-translator-app/precache-manifest.0eceb4df4c3f23dde584592a05eaec3e.js",
+    "precache-manifest.a0993917fe592c92624169444896e682.js": "/yandex-translator-app/precache-manifest.a0993917fe592c92624169444896e682.js",
     "service-worker.js": "/yandex-translator-app/service-worker.js",
     "static/css/main.274a46a5.chunk.css.map": "/yandex-translator-app/static/css/main.274a46a5.chunk.css.map",
     "static/media/Boy1.png": "/yandex-translator-app/static/media/Boy1.7dafc2b3.png",
@@ -21,7 +21,6 @@
     "static/media/Girl3.png": "/yandex-translator-app/static/media/Girl3.fa4a8d17.png",
     "static/media/Girl4.png": "/yandex-translator-app/static/media/Girl4.5676e7ca.png",
     "static/media/Girl5.png": "/yandex-translator-app/static/media/Girl5.e0cd25a9.png",
-    "static/media/Girl6.png": "/yandex-translator-app/static/media/Girl6.2ba61679.png",
-    "static/media/Girl7.png": "/yandex-translator-app/static/media/Girl7.eefa9d1d.png"
+    "static/media/Girl6.png": "/yandex-translator-app/static/media/Girl6.eefa9d1d.png"
   }
 }
