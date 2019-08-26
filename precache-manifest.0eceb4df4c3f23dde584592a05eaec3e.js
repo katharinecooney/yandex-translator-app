@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64ff04ad8cc1adee7f250d782413092b",
+    "revision": "3d239bcc134055bbf9a794df92ba4a0d",
     "url": "/yandex-translator-app/index.html"
   },
   {
-    "revision": "dcca8326fe1010801c23",
-    "url": "/yandex-translator-app/static/css/main.a1b7912c.chunk.css"
+    "revision": "1b1128718cd654bd2463",
+    "url": "/yandex-translator-app/static/css/main.274a46a5.chunk.css"
   },
   {
     "revision": "b8d1d96cd69e9c17dc01",
     "url": "/yandex-translator-app/static/js/2.5b5ac55c.chunk.js"
   },
   {
-    "revision": "dcca8326fe1010801c23",
-    "url": "/yandex-translator-app/static/js/main.065ca96e.chunk.js"
+    "revision": "1b1128718cd654bd2463",
+    "url": "/yandex-translator-app/static/js/main.ebf4a257.chunk.js"
   },
   {
     "revision": "1dcc77f879bb984325bb",
